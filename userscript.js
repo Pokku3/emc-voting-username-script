@@ -1,8 +1,8 @@
 // ==UserScript==
-// @name        Autofill username in EMC vote forms
+// @name         Autofill username in EMC vote forms
 // @version      1.05
 // @description  Autofill your Minecraft username in the forms of websites when voting for Empire Minecraft
-// @author      Pokku8
+// @author       Pokku8
 // By class:
 // @match        https://minecraft-server.net/vote/Aikar/
 // @match        https://minecraftservers100.com/vote/112*
