@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Autofill username in EMC vote forms
-// @version      1.06
+// @version      1.07
 // @description  Autofill your Minecraft username in the forms of websites when voting for Empire Minecraft
 // @author       Pokku8
 // By class:
@@ -18,7 +18,7 @@
 (function() {
     'use strict';
     // Fill username
-    var usernameForm = document.querySelectorAll('.form-control, .sm-form-control, .form-input, [name="mcname"], [name="ignn"], [name="game_user"], [name="username"]');
+    var usernameForm = document.querySelectorAll('.form-control, .sm-form-control, .form-input, [name="mcname"], [name="ignnn"], [name="game_user"], [name="username"]');
     for (var i = 0; i < usernameForm.length; i++) {
         usernameForm[i].value = 'YOURNAME'; // <--- CHANGE YOUR NAME
     }
