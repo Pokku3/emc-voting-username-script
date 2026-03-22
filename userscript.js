@@ -1,18 +1,16 @@
 // ==UserScript==
 // @name         Autofill username in EMC vote forms
-// @version      2.03
+// @version      2.04
 // @description  Autofill your Minecraft username in the forms of websites when voting for Empire Minecraft
 // @author       Pokku8
 // @match        https://empireminecraft.com/wiki/vote/
-// By class:
-// @match        https://minecraft-server.net/vote/Aikar/
-// @match        https://minecraftservers100.com/vote/112*
-// @match        https://minecraftservers.biz/empire-minecraft/
 // By name:
 // @match        https://topg.org/minecraft-servers/server-355353*
-// @match        https://www.planetminecraft.com/server/empire-minecraft-2906938/vote/
+// @match        https://minecraft-mp.com/server/4659/vote/
+// @match        https://minestatus.net/server/vote/play.emc.gs
 // @match        https://minecraft-server-list.com/server/240530/vote/
-// @match        https://minecraftservers.org/vote/134885
+// @match        https://minecraftservers.org/vote/2
+// @match        https://www.planetminecraft.com/server/empire-minecraft-2906938/vote/
 // @grant        GM_setValue
 // @grant        GM_getValue
 // ==/UserScript==
@@ -43,11 +41,8 @@
     }
 
     // Fill username
-    var usernameForm = document.querySelectorAll('.form-control, .sm-form-control, .form-input, [name="mcname"], [name="ignnn"], [name="game_user"], [name="username"]');
+    var usernameForm = document.querySelectorAll('[name="mcname"], [name="ignnn"], [name="nickname"], [name="username"]');
     for (var i = 0; i < usernameForm.length; i++) {
         usernameForm[i].value = username;
     }
-
-    // Rate 5/5 on Minecraft-Server.net
-    document.getElementById('rate-10').click();
 })();
